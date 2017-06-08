@@ -6505,7 +6505,7 @@ label.panel-block:hover {
 }
 
 .hero.is-dark {
-  background-color: #363636;
+  background-color: black;
   color: whitesmoke;
 }
 
@@ -7110,7 +7110,7 @@ label.panel-block:hover {
   min-height: 100vh;
 }
 
-.hero.is-fullheight .hero-body {
+.hero .hero-body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -7119,13 +7119,14 @@ label.panel-block:hover {
   display: flex;
 }
 
-.hero.is-fullheight .hero-body > .container {
+.hero .hero-body > .container {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
   -ms-flex-negative: 1;
       flex-shrink: 1;
 }
+
 
 .section {
   background-color: white;

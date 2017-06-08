@@ -1,78 +1,105 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Cait Portfolio Static Server</title>
-  <link rel="stylesheet" href="./css/style.min.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Cait Portfolio Static Server</title>
+    <link rel="stylesheet" href="./css/style.min.css">
 </head>
-    <body class="contact">
-        <nav class="navigation">
-            <div class="row between-xs middle-xs pd-top-sm pd-bottom-sm pd-left-xl pd-right-xl full-width hide-xs">
-                <div class="col-xs-1">
-                    <a href="./index.html"><img class="headshot" src="/images/my-headshot.jpg" width="80%"></a>
-                </div>
-                <div class="row no-margin no-padding end-xs middle-xs col-xs-8">
-                <div class="col-xs-4">
-                    <a href="./experience.html" class="type-xxs text-right nav-item">Experience</strong></a>
-                </div>                
-                <div class="col-xs-4">
-                    <a href="./contact.html" class="type-xxs text-right nav-item">Contact</strong></a>
-                </div>
-            </div>
-        </nav>
-        <div class="row start-xs middle-xs no-margin pd-top-xxl pd-bottom-xxl">
-            <div class="container pd-top-xxl">
-                <div class="row">
-                    <div class="col-xs-12">
-                        <h1 class="main-heading no-bottom type-xl type-lg-mobile line-height-130 text-left"><strong>Let's Talk</strong></h1>
-                        <p class="type-sm type-xs-mobile text-left mg-top-bottom-md line-height-140">I enjoy both working in a studio as well as taking on solo commissions. So if you want to work with me — don’t hesitate to fill out the form or send an <a href="https://m.me/100006685398002" target="_blank">instant message.</a></p>
+
+<body class="contact">
+    <section class="hero is-dark">
+        <!-- Hero header: will stick at the top -->
+        <div class="hero-head" data-aos="fade-down" data-aos-once="true">
+            <header class="nav">
+                <div class="container">
+                    <div class="nav-left">
+                        <a class="nav-item">
+                            <img class="my-headshot" src="/images/my-headshot.jpg" alt="Logo">
+                        </a>
+                    </div>
+                    <span class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </span>
+                    <div class="nav-right nav-menu">
+                        <a href="./experience.html" class="nav-item">Experience</a>
+                        <span class="nav-item">
+                            <a href="./contact.html" class="button is-primary is-inverted is-outlined">
+                                <span>Contact</span>
+                        </a>
+                        </span>
                     </div>
                 </div>
-                <div class="row start-xs middle-xs no-margin">
-                    <form class="column full-width no-padding">
-                        <div class="row between-xs middle-xs no-padding mg-top-bottom-xs">
-                            <div class="col-xs-6 column">
-                                <label for="name" class="text-left mg-bottom-xxs">Your Name<small> <sup>*</sup></small></label>
-                                <input type="text" id="name" name="firstname">
-                            </div>
-                            <div class="col-xs-6 column">
-                                <label for="interest" class="text-left mg-bottom-xxs">Interested In <sup>*</sup></small></label>
-                                <select id="interest">
-                                    <option value="website">Website</option>
-                                    <option value="prototype">Prototype</option>
-                                    <option value="not sure">I'm not Sure</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row between-xs middle-xs no-padding mg-top-bottom-xs">
-                            <div class="col-xs-6 column">
-                                <label for="email" class="text-left mg-bottom-xxs">Your Email<small> <sup>*</sup></small></label>
-                                <input type="email" id="email" name="firstname">
-                            </div>
-                            <div class="col-xs-6 column">
-                                <label for="phone" class="text-left mg-bottom-xxs">Your Phone</label>
-                                <input type="phone" id="phone" name="firstname">
-                            </div>
-                        </div>
-                        <div class="row center-xs middle-xs no-padding no-margin">
-                            <div class="col-xs-12 mg-top-bottom-xs">
-                                <textarea style="max-width: 100%;" placeholder="Your Message" class="full-width" rows="3" cols="50"></textarea>
-                            </div>
-                        </div>
-                        <div class="row center-xs middle-xs no-padding no-margin">
-                            <div class="col-xs-12 mg-top-bottom-xs">
-                                <button class="button button--nina button--text-thick button--text-upper button--size-s button--inverted type-xs no-margin full-width" data-text="Free Consultation">
-                                    <span>R</span><span>e</span><span>q</span><span>u</span><span>e</span><span>s</span><span>t</span>
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+            </header>
+        </div>
+
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+            <div class="container">
+                <div class="columns is-mobile">
+                    <div class="column is-12-mobile is-8-tablet is-8-desktop is-offset-2-tablet is-offset-2-desktop">
+                        <h1 data-aos="fade-up" data-aos-once="true" class="main-heading no-bottom type-xl type-lg-mobile line-height-130 text-left"><strong>Let's Talk</strong></h1>
+                        <p data-aos="fade-up" data-aos-once="true" data-aos-delay="100" class="type-sm type-xs-mobile text-left mg-top-bottom-md line-height-140">I enjoy both working in a studio as well as taking on solo commissions. So if you want to work with
+                            me — don’t hesitate to fill out the form or send an <a href="https://m.me/100006685398002" target="_blank">instant message.</a></p>
+                    </div>
                 </div>
             </div>
-        </div>        
-        <script src="./js/main.min.js"></script>
-    </body>
+        </div>
+    </section>
+    <section class="section">
+        <div class="container is-fluid">
+            <div class="columns is-mobile">
+                <div class="column is-12-mobile is-6-tablet is-6-desktop is-offset-2-tablet is-offset-2-desktop">
+                    <div class="field">
+                        <label class="label">Name <sup>*</sup></label>
+                        <p class="control has-icons-left has-icons-right">
+                            <input class="input is-primary" type="text" placeholder="Your Name">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-user"></i>
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Email <sup>*</sup></label>
+                        <p class="control has-icons-left has-icons-right">
+                            <input class="input is-primary" type="text" placeholder="Your Email">
+                            <span class="icon is-small is-left">
+                                <i class="fa fa-envelope"></i>
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Subject <sup>*</sup></label>
+                        <p class="control">
+                            <span class="select">
+                                <select>
+                                    <option>Select dropdown</option>
+                                    <option>Website</option>
+                                    <option>Prototype</option>
+                                    <option>App</option>
+                                    <option>I'm Not Sure</option>
+                                    <option>Other</option>
+                                </select>
+                            </span>
+                        </p>
+                    </div>
+
+                    <div class="field">
+                        <label class="label">Message <sup>*</sup></label>
+                        <p class="control">
+                            <textarea class="textarea" placeholder="Write Your Message Here"></textarea>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <script src="./js/main.min.js"></script>
+</body>
+
 </html>

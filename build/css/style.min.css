@@ -5631,7 +5631,7 @@ label.panel-block:hover {
     border-top-color: rgba(54, 54, 54, 0.2); } }
 
 .hero.is-dark {
-  background-color: #363636;
+  background-color: black;
   color: whitesmoke; }
 
 .hero.is-dark a:not(.button),
@@ -6087,7 +6087,7 @@ label.panel-block:hover {
 .hero.is-fullheight {
   min-height: 100vh; }
 
-.hero.is-fullheight .hero-body {
+.hero .hero-body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -6095,7 +6095,7 @@ label.panel-block:hover {
   display: -ms-flexbox;
   display: flex; }
 
-.hero.is-fullheight .hero-body > .container {
+.hero .hero-body > .container {
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
   flex-grow: 1;
