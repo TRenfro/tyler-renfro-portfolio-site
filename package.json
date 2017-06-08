@@ -1,0 +1,28 @@
+{
+  "name": "cait-portfolio-static-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "node-sass --include-path scss scss/main.scss build/css/style.min.css",
+    "build-js": "browserify js/**.js >build/js/script.min.js",
+    "watch:js": "onchange 'js/**.js' -- npm run build-js",
+    "watch:css": "onchange 'scss/**.scss' -- npm run build-css",
+    "browser-sync": "browser-sync start --server build --files \"build/*.html, build/css/*.min.css\"",
+    "serve": "parallelshell 'npm run browser-sync' 'npm run watch:css' 'npm run watch:js'"
+  },
+  "author": "Tyler Renfro",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.12",
+    "browserify": "^14.3.0",
+    "node-sass": "^4.5.3",
+    "nodemon": "^1.11.0",
+    "onchange": "^3.2.1",
+    "parallelshell": "^2.0.0"
+  },
+  "dependencies": {
+    "flexboxgrid": "^6.3.1",
+    "jquery": "^3.2.1"
+  }
+}

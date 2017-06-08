@@ -1,0 +1,34 @@
+//mobile-only styles
+@media (max-width: 768px) {
+  /*Mobile typeface sizes*/
+  .container {
+      width: 85vw;
+  }
+  .hide-xs {
+      display: none;
+  }
+}
+
+//for tablet sizes
+@media (min-width: 768px) {
+  /*Tablet typeface sizes*/
+  .container {
+      width: 80vw;
+  }
+}
+
+//for desktop (medium) sizes
+@media(min-width: 992px) {
+  /*Desktop typeface sizes*/
+  .container {
+      width: 70vw;
+  } 
+}
+
+//For desktop (large) sizes
+@media(min-width: 1200px) {
+  /*Large Desktop typeface sizes*/
+  .container  {
+      width: 55vw;
+  }
+}

@@ -1,0 +1,200 @@
+//==================================
+// set base typography
+//==================================
+$sans: Verdana;
+$serif: Georgia, 'Times New Roman', Times, serif;
+
+$mobile-body: 16px;
+$tablet-body: 18px;
+$laptop-body: 20px;
+$desktop-body: 22px;
+
+body {
+  * {
+    font-family: $sans;
+  }
+}
+.sans {
+    font-family: $sans;
+}
+.serif {
+    font-family: $serif;
+}
+em {
+    font-style: italic;
+}
+.caps {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.pull-quote-text {
+  font-size: $lg-size;
+  color: $brand-accent-600;
+  font-style: italic;
+  line-height: 140%;
+  font-weight: 300; 
+  
+  .smart-quote {
+    font-size: $lg-size;    
+  }
+}
+//==================================
+// line height
+//==================================
+.line-height-100 {
+    line-height: 100%;
+}
+
+.line-height-110 {
+    line-height: 110%;
+}
+
+.line-height-120 {
+    line-height: 120%;
+}
+
+.line-height-130 {
+    line-height: 130%;
+}
+
+.line-height-140 {
+    line-height: 140%;
+}
+
+//==================================
+// responsive typography
+//==================================
+.type-xxl {
+  font-size: $xxl-size;
+}
+.type-xl {
+  font-size: $xl-size;
+}
+.type-lg {
+  font-size: $lg-size;
+}
+.type-md {
+  font-size: $md-size;
+}
+.type-sm {
+  font-size: $sm-size;
+}
+.type-xs {
+  font-size: $xs-size;
+}
+.type-xxs {
+  font-size: $xxs-size;
+}
+
+//mobile-only styles
+@media (max-width: 768px) {
+  /*Mobile typeface sizes*/
+  body {
+    font-size: $mobile-body;
+  }
+  .type-xxl-mobile {
+    font-size: $xxl-size;
+  }
+  .type-xl-mobile {
+    font-size: $xl-size;
+  }
+  .type-lg-mobile {
+    font-size: $lg-size;
+  }
+  .type-md-mobile {
+    font-size: $md-size;
+  }
+  .type-sm-mobile {
+    font-size: $sm-size;
+  }
+  .type-xs-mobile {
+    font-size: $xs-size;
+  }
+  .type-xxs-mobile {
+    font-size: $xxs-size;
+  }
+}
+
+//for tablet sizes
+@media (min-width: 768px) {
+  /*Tablet typeface sizes*/
+  body {
+    font-size: $tablet-body;
+  }
+  .type-xxl-tablet {
+    font-size: $xxl-size;
+  }  
+  .type-xl-tablet {
+    font-size: $xl-size;
+  }
+  .type-lg-tablet {
+    font-size: $lg-size;
+  }
+  .type-md-tablet {
+    font-size: $md-size;
+  }
+  .type-sm-tablet {
+    font-size: $sm-size;
+  }
+  .type-xxs-tablet {
+    font-size: $xxs-size;
+  }
+  //for nothing bigger than tablet
+  @media (max-width: 992px) {
+
+  }
+}
+
+//for desktop (medium) sizes
+@media(min-width: 992px) {
+  /*Desktop typeface sizes*/
+  body {
+    font-size: $laptop-body;
+  }
+  .type-xxl-laptop {
+    font-size: $xxl-size;
+  }  
+  .type-xl-laptop {
+    font-size: $xl-size;
+  }
+  .type-lg-laptop {
+    font-size: $lg-size;
+  }
+  .type-md-laptop {
+    font-size: $md-size;
+  }
+  .type-sm-laptop {
+    font-size: $sm-size;
+  }
+  .type-xxs-laptop {
+    font-size: $xxs-size;
+  }
+
+  //for nothing bigger than desktop (medium)
+  @media (max-width: 1200px) {
+
+  }
+}
+
+//For desktop (large) sizes
+@media(min-width: 1200px) {
+  /*Large Desktop typeface sizes*/
+  body {
+    font-size: $desktop-body;
+  }
+  .type-xxl-desktop {
+    font-size: $xxl-size;
+  }
+  .type-lg-desktop {
+    font-size: $lg-size;
+  }
+  .type-md-desktop {
+    font-size: $md-size;
+  }
+  .type-sm-desktop {
+    font-size: $sm-size;
+  }
+  .type-xxs-desktop {
+    font-size: $xxs-size;
+  }
+}
