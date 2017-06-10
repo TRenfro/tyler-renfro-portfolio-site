@@ -20,6 +20,34 @@
     border-radius: 100%;    
 }
 
+a.linked-in {
+    color: #0077B5;
+    &:hover,
+    &:focus,
+    &:active {
+        color: darken(#0077B5, 10%);
+    }    
+}
+
+a.dribbble {
+    color: #ea4c89;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: darken(#ea4c89, 10%);
+    }
+}
+
+a.facebook {
+    color: #3B5998;
+
+    &:hover,
+    &:focus,
+    &:active {
+        color: darken(#3B5998, 10%);
+    }
+}
 .display-flex {
     display: flex;
 }
@@ -71,6 +99,19 @@
     background-repeat: no-repeat;
     background-position: top center;    
 }
+
+.hero.is-primary.is-fullheight.sds {
+    background: 
+        linear-gradient(
+        rgba(0, 0, 0, 0.65), 
+        rgba(0, 0, 0, 0.65)
+        ),
+        url('/images/SDS-prototype.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; 
+}
+
 
 .hero.is-primary.is-fullheight.patriot-powder {
     background: 
