@@ -4,16 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Caint Portfolio Static Server</title>
+    <title>Tyler Renfro—Freelance Web Design</title>
     <link rel="stylesheet" href="./css/style.min.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </head>
 
 <body>
-    <section class="hero is-primary is-fullheight">
+    <section class="hero is-svg-hero is-dark is-fullheight">
         <!-- Hero header: will stick at the top -->
-        <div class="hero-head" data-aos="fade-down" data-aos-once="true">
+        <div class="hero-head">
             <header class="nav">
                 <div class="container">
                     <div class="nav-left">
@@ -21,13 +21,13 @@
                             <img class="my-headshot" src="/images/my-headshot.jpg" alt="Logo">
                         </a>
                     </div>
-                    <span class="nav-toggle">
+                    <span id="nav-toggle" class="nav-toggle">
                     <span></span>
                     <span></span>
                     <span></span>
                     </span>
-                    <div class="nav-right nav-menu">
-                        <a href="./index.html" class="nav-item">About</a>
+                    <div id="nav-menu" class="nav-right nav-menu">
+                        <a href="./index.html" class="nav-item is-active">About</a>
                         <a href="./experience.html" class="nav-item">Experience</a>
                         <span class="nav-item">
                             <a href="./contact.html" class="button is-primary is-inverted is-outlined">
@@ -50,7 +50,7 @@
                         <h2 data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="type-md mg-top-bottom-sm">
                             Web Technologies &amp; Prototypes for people in St. Louis
                         </h2>
-                        <a data-aos="fade-up" data-aos-delay="200" data-aos-once="true" class="button is-primary is-inverted is-outlined is-large full-width">Free Consultation</a>
+                        <a data-aos="fade-up" data-aos-delay="200" data-aos-once="true" href="./contact.html" class="button is-primary is-inverted is-outlined is-large full-width">Free Consultation</a>
                     </div>
                 </div>
             </div>
@@ -155,7 +155,7 @@
                             <div class="media-content">
                                 <div class="content text-center">
                                     <h1 class="type-md type-sm-mobile mg-bottom-xs">Interested in working together?</h1>
-                                    <a class="button is-primary is-large">Contact me</a>
+                                    <a href="./contact.html" class="button is-primary is-large">Contact me</a>
                                 </div>
                             </div>
                         </article>

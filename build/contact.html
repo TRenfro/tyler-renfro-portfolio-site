@@ -4,14 +4,16 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Cait Portfolio Static Server</title>
+    <title>Tyler Renfro—Freelance Web Design</title>
     <link rel="stylesheet" href="./css/style.min.css">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 </head>
 
 <body class="contact">
     <section class="hero is-dark">
         <!-- Hero header: will stick at the top -->
-        <div class="hero-head" data-aos="fade-down" data-aos-once="true">
+        <div class="hero-head">
             <header class="nav">
                 <div class="container">
                     <div class="nav-left">
@@ -19,15 +21,15 @@
                             <img class="my-headshot" src="/images/my-headshot.jpg" alt="Logo">
                         </a>
                     </div>
-                    <span class="nav-toggle">
+                    <span id="nav-toggle" class="nav-toggle">
                     <span></span>
                     <span></span>
                     <span></span>
                     </span>
-                    <div class="nav-right nav-menu">
+                    <div id="nav-menu" class="nav-right nav-menu">
                         <a href="./index.html" class="nav-item">About</a>
                         <a href="./experience.html" class="nav-item">Experience</a>
-                        <span class="nav-item">
+                        <span class="nav-item is-active">
                             <a href="./contact.html" class="button is-primary is-inverted is-outlined">
                                 <span>Contact</span>
                         </a>
@@ -43,8 +45,8 @@
                 <div class="columns is-mobile">
                     <div class="column is-12-mobile is-8-tablet is-8-desktop is-offset-2-tablet is-offset-2-desktop">
                         <h1 data-aos="fade-up" data-aos-once="true" class="main-heading no-bottom type-xl type-lg-mobile line-height-130 text-left"><strong>Let's Talk</strong></h1>
-                        <p data-aos="fade-up" data-aos-once="true" data-aos-delay="100" class="type-sm type-xs-mobile text-left mg-top-bottom-md line-height-140">I enjoy both working in a studio as well as taking on solo commissions. So if you want to work with
-                            me — don’t hesitate to fill out the form or send an <a href="https://m.me/100006685398002" target="_blank">instant message.</a></p>
+                        <p data-aos="fade-up" data-aos-once="true" data-aos-delay="100" class="type-sm type-xs-mobile text-left mg-top-bottom-md line-height-140">I enjoy both working in onsite as well as remote. So if you want to work with me—don’t hesitate to
+                            send a message using the outlets below.</p>
                     </div>
                 </div>
             </div>
@@ -53,49 +55,18 @@
     <section class="section">
         <div class="container is-fluid">
             <div class="columns is-mobile">
-                <div class="column is-12-mobile is-6-tablet is-6-desktop is-offset-2-tablet is-offset-2-desktop">
-                    <div class="field">
-                        <label class="label">Name <sup>*</sup></label>
-                        <p class="control has-icons-left has-icons-right">
-                            <input class="input is-primary" type="text" placeholder="Your Name">
-                            <span class="icon is-small is-left">
-                                <i class="fa fa-user"></i>
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Email <sup>*</sup></label>
-                        <p class="control has-icons-left has-icons-right">
-                            <input class="input is-primary" type="text" placeholder="Your Email">
-                            <span class="icon is-small is-left">
-                                <i class="fa fa-envelope"></i>
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Subject <sup>*</sup></label>
-                        <p class="control">
-                            <span class="select">
-                                <select>
-                                    <option>Select dropdown</option>
-                                    <option>Website</option>
-                                    <option>Prototype</option>
-                                    <option>App</option>
-                                    <option>I'm Not Sure</option>
-                                    <option>Other</option>
-                                </select>
-                            </span>
-                        </p>
-                    </div>
-
-                    <div class="field">
-                        <label class="label">Message <sup>*</sup></label>
-                        <p class="control">
-                            <textarea class="textarea" placeholder="Write Your Message Here"></textarea>
-                        </p>
-                    </div>
+                <div data-aos="fade-up" data-aos-once="true" class="column is-12-mobile is-6-tablet is-6-desktop is-offset-2-tablet is-offset-2-desktop">
+                    <a href="https://www.linkedin.com/in/tyler-renfro-21a23493/" target="_blank">Linked In</a>
+                </div>
+            </div>
+            <div class="columns is-mobile">
+                <div data-aos="fade-up" data-aos-once="true" class="column is-12-mobile is-6-tablet is-6-desktop is-offset-2-tablet is-offset-2-desktop">
+                    <a href="https://m.me/100006685398002" target="_blank">Messenger</a>
+                </div>
+            </div>
+            <div class="columns is-mobile">
+                <div data-aos="fade-up" data-aos-once="true" class="column is-12-mobile is-6-tablet is-6-desktop is-offset-2-tablet is-offset-2-desktop">
+                    <a target="_blank">Tyler.V.Renfro@gmail.com</a>
                 </div>
             </div>
         </div>
@@ -107,13 +78,32 @@
                     <strong>Tyler Renfro</strong> is a freelance designer living in St. Louis, MO. If you have any questions
                     or want to reach out, please don't hesidate to <a href="./contact.html">contact.</a>
                 </p>
-                <a href="https://www.linkedin.com/in/tyler-renfro-21a23493/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                <a href="https://dribbble.com/V_Renfro" target="_blank"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100006685398002" taret="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a class="linked-in" href="https://www.linkedin.com/in/tyler-renfro-21a23493/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                <a class="dribbble" href="https://dribbble.com/V_Renfro" target="_blank"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                <a class="facebook" href="https://www.facebook.com/profile.php?id=100006685398002" taret="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
             </div>
         </div>
     </footer>
-    <script src="./js/main.min.js"></script>
+    <script src="./js/script.min.js"></script>
+    <script>
+        var emailApiAddress = 'http://localhost:1337';
+        // var emailApiAddress = 'RealHostedService';
+
+        var request = new Request(emailApiAddress, {
+            method: 'POST',
+        });
+
+        function sendEmail() {
+            fetch(emailApiAddress, {
+                method: 'post',
+                body: JSON.stringify({
+                    email: document.getElementById('email').value,
+                    name: document.getElementById('name').value,
+                    message: document.getElementById('message').value,
+                })
+            });
+        }
+    </script>
 </body>
 
 </html>
