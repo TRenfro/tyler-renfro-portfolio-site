@@ -1,7 +1,7 @@
 //==================================
 // set base typography
 //==================================
-$sans: Verdana;
+$sans: 'Trebuchet MS';
 $serif: Georgia, 'Times New Roman', Times, serif;
 
 $mobile-body: 16px;
@@ -26,17 +26,6 @@ em {
 .caps {
     text-transform: uppercase;
     letter-spacing: 3px;
-}
-.pull-quote-text {
-  font-size: $lg-size;
-  color: $brand-accent-600;
-  font-style: italic;
-  line-height: 140%;
-  font-weight: 300; 
-  
-  .smart-quote {
-    font-size: $lg-size;    
-  }
 }
 //==================================
 // line height
