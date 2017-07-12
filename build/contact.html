@@ -8,17 +8,18 @@
     <link rel="stylesheet" href="./css/style.min.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script src="./js/clipboard.min.js"></script>
 </head>
 
 <body class="contact">
-    <section class="hero is-dark">
+    <section class="hero is-fullheight">
         <!-- Hero header: will stick at the top -->
         <div class="hero-head">
             <header class="nav">
                 <div class="container">
                     <div class="nav-left">
                         <a class="nav-item">
-                            <img class="my-headshot" src="/images/my-headshot.jpg" alt="Logo">
+                            <img class="my-headshot" src="/images/my-headshot.jpg" alt="Logo"><p class="mg-left-xs"><strong>Tyler Renfro</strong>—<em>Freelance Designer</em></p>
                         </a>
                     </div>
                     <span id="nav-toggle" class="nav-toggle">
@@ -30,9 +31,7 @@
                         <a href="./index.html" class="nav-item">About</a>
                         <a href="./experience.html" class="nav-item">Experience</a>
                         <span class="nav-item is-active">
-                            <a href="./contact.html" class="button is-primary is-inverted is-outlined">
-                                <span>Contact</span>
-                        </a>
+                            <a href="./contact.html" class="button is-primary is-outlined"><span>Contact</span></a>
                         </span>
                     </div>
                 </div>
@@ -44,29 +43,24 @@
             <div class="container">
                 <div class="columns is-mobile">
                     <div class="column is-12-mobile is-8-tablet is-8-desktop is-offset-2-tablet is-offset-2-desktop">
-                        <h1 data-aos="fade-up" data-aos-once="true" class="main-heading no-bottom type-xl type-lg-mobile line-height-130 text-left"><strong>Let's Talk</strong></h1>
-                        <p data-aos="fade-up" data-aos-once="true" data-aos-delay="100" class="type-sm type-xs-mobile text-left mg-top-bottom-md line-height-140">I enjoy both working in onsite as well as remote. So if you want to work with me—don’t hesitate to
-                            send a message using the outlets below.</p>
+                        <h1 data-aos="fade-up" data-aos-once="true" class="main-heading no-bottom type-xxl type-lg-mobile line-height-130 text-left"><strong>Let's Talk</strong></h1>
+                        <p data-aos="fade-up" data-aos-once="true" data-aos-delay="100" class="type-sm type-xs-mobile text-left mg-top-bottom-md line-height-140">I enjoy both working remotely as well as onsite. If you want to get in contact — don’t hesitate to
+                            send an email to the address below.</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="section">
-        <div class="container is-fluid">
-            <div class="columns is-mobile">
-                <div data-aos="fade-up" data-aos-once="true" class="column is-12-mobile is-6-tablet is-6-desktop is-offset-2-tablet is-offset-2-desktop">
-                    <a href="https://www.linkedin.com/in/tyler-renfro-21a23493/" target="_blank">Linked In</a>
-                </div>
-            </div>
-            <div class="columns is-mobile">
-                <div data-aos="fade-up" data-aos-once="true" class="column is-12-mobile is-6-tablet is-6-desktop is-offset-2-tablet is-offset-2-desktop">
-                    <a href="https://m.me/100006685398002" target="_blank">Messenger</a>
-                </div>
-            </div>
-            <div class="columns is-mobile">
-                <div data-aos="fade-up" data-aos-once="true" class="column is-12-mobile is-6-tablet is-6-desktop is-offset-2-tablet is-offset-2-desktop">
-                    <a target="_blank">Tyler.V.Renfro@gmail.com</a>
+                <div class="columns is-mobile">
+                    <div data-aos="fade-up" data-aos-once="true" class="column is-12-mobile is-5-tablet is-3-desktop is-offset-2-tablet is-offset-2-desktop">
+                        <div class="field has-addons">
+                            <p class="control full-width">
+                                <input class="input" id="foo" value="tyler.v.renfro@gmail.com">
+                            </p>
+                            <p class="control">
+                                <button class="btn button is-gradient" data-clipboard-target="#foo">
+                                    Copy
+                                </button>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -85,25 +79,6 @@
         </div>
     </footer>
     <script src="./js/script.min.js"></script>
-    <!--<script>
-        var emailApiAddress = 'http://localhost:1337';
-        // var emailApiAddress = 'RealHostedService';
-
-        var request = new Request(emailApiAddress, {
-            method: 'POST',
-        });
-
-        function sendEmail() {
-            fetch(emailApiAddress, {
-                method: 'post',
-                body: JSON.stringify({
-                    email: document.getElementById('email').value,
-                    name: document.getElementById('name').value,
-                    message: document.getElementById('message').value,
-                })
-            });
-        }
-    </script>-->
 </body>
 
 </html>

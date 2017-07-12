@@ -2,6 +2,23 @@
 // general helpers
 //==================================
 
+.button.is-gradient {
+	background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
+	
+	 background-size: 200% auto;
+	 border: none;
+	 color: white;	 
+	 transition: 0.5s !important;
+	 background-repeat: no-repeat;
+	 background-position: center center;
+	 &:hover {
+  		background-position: center right;
+		color: white;
+		transition: 0.5s;
+		border: none;
+	 }
+}
+
 //content alignment
 .no-top {
 	margin-top: 0 !important;

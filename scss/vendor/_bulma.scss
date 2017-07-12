@@ -1215,7 +1215,7 @@ a.box:active {
 
 .button.is-primary.is-outlined {
   background-color: transparent;
-  border-color: #2196F3;
+  border-image: #2196F3;
   color: #2196F3;
 }
 
@@ -4419,7 +4419,6 @@ a.nav-item.is-tab.is-active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 4.25rem;
   position: relative;
   text-align: center;
   z-index: 10;
