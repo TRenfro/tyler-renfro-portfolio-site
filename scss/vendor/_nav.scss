@@ -2,6 +2,15 @@
     background: white;
 }
 
+.nav-left {
+    em {
+        color: #7a7a7a;
+        &:hover {
+            color: #7a7a7a;
+        }
+    }
+}
+
 .mobile-nav {
   overflow: hidden;
   background:  linear-gradient(-20deg, rgba(darken(#b721ff,40%), .95) 0%, rgba(darken(#21d4fd, 40%), .95) 100%);

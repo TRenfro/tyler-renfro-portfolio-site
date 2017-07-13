@@ -6170,6 +6170,11 @@ label.panel-block:hover {
 .hero .nav {
   background: white; }
 
+.nav-left em {
+  color: #7a7a7a; }
+  .nav-left em:hover {
+    color: #7a7a7a; }
+
 .mobile-nav {
   overflow: hidden;
   background: linear-gradient(-20deg, rgba(57, 0, 84, 0.95) 0%, rgba(1, 66, 81, 0.95) 100%);
