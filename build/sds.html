@@ -11,28 +11,39 @@
 </head>
 
 <body>
+    <div class="mobile-nav show-xs-only">
+        <div class="columns is-mobile no-margin">
+            <div class="column is-4-mobile">
+                <p class="text-center type-sm caps">
+                    <a href="./index.html">About</a>
+                </p>
+            </div>
+            <div class="column is-4-mobile">
+                <p class="text-center type-sm caps">
+                    <a href="./experience.html">Experience</a>
+                </p>
+            </div>
+            <div class="column is-4-mobile">
+                <p class="text-center type-sm caps">
+                    <a href="./contact.html">Contact</a>
+                </p>
+            </div>
+        </div>
+    </div>
     <section class="hero is-dark is-fullheight sds">
-        <!-- Hero header: will stick at the top -->
         <div class="hero-head">
             <header class="nav">
                 <div class="container">
                     <div class="nav-left">
-                        <a class="nav-item">
-                            <img class="my-headshot" src="/images/my-headshot.jpg" alt="Logo">
+                        <a class="nav-item" href="./index.html">
+                            <img class="my-headshot hide-xs" src="/images/my-headshot.jpg" alt="Logo"><p class="mg-left-xs"><strong>Tyler Renfro</strong>—<em>Freelance Designer</em></p>
                         </a>
                     </div>
-                    <span id="nav-toggle" class="nav-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    </span>
                     <div id="nav-menu" class="nav-right nav-menu">
-                        <a href="./index.html" class="nav-item">About</a>
+                        <a href="./index.html" class="nav-item is-active">About</a>
                         <a href="./experience.html" class="nav-item">Experience</a>
                         <span class="nav-item">
-                            <a href="./contact.html" class="button is-primary is-inverted is-outlined">
-                                <span>Contact</span>
-                        </a>
+                            <a href="./contact.html" class="button is-outlined"><span>Contact</span></a>
                         </span>
                     </div>
                 </div>
@@ -44,7 +55,7 @@
             <div class="container">
                 <div class="columns is-mobile">
                     <div class="column is-12-mobile is-10-tablet is-8-desktop is-offset-2-tablet is-offset-2-desktop">
-                        <h1 data-aos="fade-up" data-aos-once="true" class="type-xxl type-lg-mobile no-margin line-height-130">
+                        <h1 data-aos="fade-up" data-aos-once="true" class="type-xxl type-xl-mobile no-margin line-height-130">
                             <strong>SDS</strong>
                         </h1>
                         <h2 data-aos="fade-up" data-aos-delay="100" data-aos-once="true" class="type-md mg-top-bottom-sm">
@@ -64,7 +75,7 @@
             </div>
             <div class="columns is-mobile" data-aos="fade-up" data-aos-once="true">
                 <div class="column is-12-mobile is-10-tablet is-8-desktop is-offset-2-tablet is-offset-2-desktop">
-                    <p class="line-height-140 type-sm mg-bottom-sm">In the trucking industry, there are a lot of dark practices that exploit drivers. Oftentimes, shipping
+                    <p class="line-height-140 type-sm type-md-mobile mg-bottom-sm">In the trucking industry, there are a lot of dark practices that exploit drivers. Oftentimes, shipping
                         and receiving sites will report false information or refuse to pay additional fees for taking too
                         long to load or unload the shipment. This results in drivers paying the price for lost time, forcing
                         them to drive ridiculous hours, which ultimately endangers others on the road.</p>
@@ -84,7 +95,7 @@
             </div>
             <div class="columns is-mobile" data-aos="fade-up" data-aos-once="true">
                 <div class="column is-12-mobile is-10-tablet is-8-desktop is-offset-2-tablet is-offset-2-desktop">
-                    <p class="line-height-140 type-sm">This problem was very difficult to solve as there are numerous touch points to consider. In order to
+                    <p class="line-height-140 type-sm type-md-mobile">This problem was very difficult to solve as there are numerous touch points to consider. In order to
                         figure out the best approach, we decided to start with a prototype to validate the workflow.
                     </p>
                 </div>
@@ -101,25 +112,25 @@
             </div>
             <div class="columns is-mobile" data-aos="fade-up" data-aos-once="true">
                 <div class="column is-12-mobile is-10-tablet is-8-desktop is-offset-2-tablet is-offset-2-desktop">
-                    <p class="line-height-140 type-sm mg-bottom-md">
+                    <p class="line-height-140 type-sm type-md-mobile mg-bottom-md">
                         Our end result was a successful prototype. We iterated the workflow and captured touch points for every part of starting
                         and finishing a delivery. This created a strong foundation for app development to begin with a clear
                         understanding of how all the pieces would come together.</p>
-                    <a href="http://marvelapp.com/1j7a42c" target="_blank" class="button is-primary is-large is-outlined">View Final Product</a>
+                    <a href="http://marvelapp.com/1j7a42c" target="_blank" class="button is-outlined type-md">View Final Product</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="section">
-        <div class="container is-fluid">
+    <div class="section no-bg-section">
+        <div class="container is-fluid pd-top-bottom-xl">
             <div class="columns is-mobile">
-                <div class="column is-12-mobile is-10-tablet is-8-desktop is-offset-2-tablet is-offset-2-desktop" data-aos="flip-up" data-aos-once="true">
+                <div class="column is-12-mobile is-8-tablet is-8-desktop is-offset-2-tablet is-offset-2-desktop" data-aos="flip-up" data-aos-once="true">
                     <div class="box">
                         <article class="media">
                             <div class="media-content">
                                 <div class="content text-center">
-                                    <h1 class="type-md type-sm-mobile mg-bottom-xs">Interested in building a Prototype like SDS?</h1>
-                                    <a href="./contact.html" class="button is-gradient is-large">Contact me</a>
+                                    <h1 class="type-md type-md-mobile mg-bottom-xs">Interested in working together?</h1>
+                                    <a href="./contact.html" class="button is-gradient type-sm type-lg-mobile">Contact me</a>
                                 </div>
                             </div>
                         </article>
@@ -127,7 +138,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <footer class="footer">
         <div class="container">
             <div class="content has-text-centered">
