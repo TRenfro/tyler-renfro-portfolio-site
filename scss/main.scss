@@ -5,6 +5,7 @@
 // @import 'vendor/components';
 @import 'vendor/bulma';
 @import 'vendor/responsive';
+@import 'vendor/nav';
 
 //project
 @import 'vendor/typography';
@@ -12,9 +13,6 @@
 
 html {
     background-color: #E9EBEE;
-}
-body {
-    border: solid 25px #E9EBEE;    
 }
 
 .center-xs{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;text-align:center}

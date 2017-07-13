@@ -1,20 +1,38 @@
 //mobile-only styles
 @media (max-width: 768px) {
-  /*Mobile typeface sizes*/
-  .container {
-      width: 85vw;
-  }
-  .hide-xs {
-      display: none;
-  }
+    /*Mobile typeface sizes*/
+    .container {
+        width: 85vw;
+    }
+
+    .hide-xs {
+        display: none;
+    }
+
+    // mobile gray background border
+    body {
+        margin-top: 5px;
+    }
+
+    section {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 }
 
 //for tablet sizes
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   /*Tablet typeface sizes*/
   .container {
       width: 80vw;
   }
+    body {
+        border: solid 15px #E9EBEE;    
+    }
+
+    .show-xs-only {
+        display: none;
+    }
 }
 
 //for desktop (medium) sizes
@@ -23,6 +41,9 @@
   .container {
       width: 70vw;
   } 
+    body {
+        border: solid 25px #E9EBEE;    
+    }
 }
 
 //For desktop (large) sizes

@@ -49,15 +49,18 @@ table {
   background-image: linear-gradient(-20deg, #b721ff 0%, #21d4fd 100%);
   background-size: 200% auto;
   border: none;
-  color: white;
   transition: 0.5s !important;
   background-repeat: no-repeat;
-  background-position: center center; }
+  background-position: center center;
+  color: white; }
   .button.is-gradient:hover {
     background-position: center right;
     color: white;
     transition: 0.5s;
     border: none; }
+
+.section.no-bg-section {
+  background: transparent; }
 
 .no-top {
   margin-top: 0 !important;
@@ -5670,7 +5673,7 @@ label.panel-block:hover {
 
 .hero.is-dark a.nav-item,
 .hero.is-dark .nav-item a:not(.button) {
-  color: rgba(245, 245, 245, 0.7); }
+  color: #7a7a7a; }
 
 .hero.is-dark a.nav-item:hover, .hero.is-dark a.nav-item.is-active,
 .hero.is-dark .nav-item a:not(.button):hover,
@@ -6136,22 +6139,46 @@ label.panel-block:hover {
   .container {
     width: 85vw; }
   .hide-xs {
-    display: none; } }
+    display: none; }
+  body {
+    margin-top: 5px; }
+  section {
+    margin-left: 5px;
+    margin-right: 5px; } }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   /*Tablet typeface sizes*/
   .container {
-    width: 80vw; } }
+    width: 80vw; }
+  body {
+    border: solid 15px #E9EBEE; }
+  .show-xs-only {
+    display: none; } }
 
 @media (min-width: 992px) {
   /*Desktop typeface sizes*/
   .container {
-    width: 70vw; } }
+    width: 70vw; }
+  body {
+    border: solid 25px #E9EBEE; } }
 
 @media (min-width: 1200px) {
   /*Large Desktop typeface sizes*/
   .container {
     width: 55vw; } }
+
+.hero .nav {
+  background: white; }
+
+.mobile-nav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100; }
+  .mobile-nav .columns {
+    width: 100%; }
 
 body * {
   font-family: "Trebuchet MS"; }
@@ -8485,9 +8512,6 @@ em {
 
 html {
   background-color: #E9EBEE; }
-
-body {
-  border: solid 25px #E9EBEE; }
 
 .center-xs {
   -webkit-box-pack: center;

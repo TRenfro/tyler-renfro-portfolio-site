@@ -1,0 +1,15 @@
+.hero .nav {
+    background: white;
+}
+
+.mobile-nav {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 100;
+    .columns {
+        width: 100%;
+    }
+}
