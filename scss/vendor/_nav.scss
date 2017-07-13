@@ -4,12 +4,24 @@
 
 .mobile-nav {
   overflow: hidden;
-  background-color: #333;
+  background:  linear-gradient(-20deg, rgba(darken(#b721ff,40%), .95) 0%, rgba(darken(#21d4fd, 40%), .95) 100%);
   position: fixed;
+  color: white;
   bottom: 0;
   width: 100%;
   z-index: 100;
     .columns {
         width: 100%;
+    }
+
+    a {
+        color: white;
+
+        &:focus,
+        &:visited,
+        &:active,
+        &:hover {
+            color: white;
+        }
     }
 }

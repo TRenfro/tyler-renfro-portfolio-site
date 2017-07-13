@@ -4,7 +4,7 @@
 $sans: 'Trebuchet MS';
 $serif: Georgia, 'Times New Roman', Times, serif;
 
-$mobile-body: 16px;
+$mobile-body: 12px;
 $tablet-body: 18px;
 $laptop-body: 20px;
 $desktop-body: 22px;
@@ -25,7 +25,7 @@ em {
 }
 .caps {
     text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
 }
 //==================================
 // line height

@@ -6172,13 +6172,18 @@ label.panel-block:hover {
 
 .mobile-nav {
   overflow: hidden;
-  background-color: #333;
+  background: linear-gradient(-20deg, rgba(57, 0, 84, 0.95) 0%, rgba(1, 66, 81, 0.95) 100%);
   position: fixed;
+  color: white;
   bottom: 0;
   width: 100%;
   z-index: 100; }
   .mobile-nav .columns {
     width: 100%; }
+  .mobile-nav a {
+    color: white; }
+    .mobile-nav a:focus, .mobile-nav a:visited, .mobile-nav a:active, .mobile-nav a:hover {
+      color: white; }
 
 body * {
   font-family: "Trebuchet MS"; }
@@ -6194,7 +6199,7 @@ em {
 
 .caps {
   text-transform: uppercase;
-  letter-spacing: 3px; }
+  letter-spacing: 2px; }
 
 .line-height-100 {
   line-height: 100%; }
@@ -6235,7 +6240,7 @@ em {
 @media (max-width: 768px) {
   /*Mobile typeface sizes*/
   body {
-    font-size: 16px; }
+    font-size: 12px; }
   .type-xxl-mobile {
     font-size: 3.157em; }
   .type-xl-mobile {
