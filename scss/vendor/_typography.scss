@@ -1,7 +1,7 @@
 //==================================
 // set base typography
 //==================================
-$sans: 'Trebuchet MS';
+$sans: 'Trebuchet MS', 'Verdana', 'Lucida Grande', sans;
 $serif: Georgia, 'Times New Roman', Times, serif;
 
 $mobile-body: 12px;
@@ -11,7 +11,7 @@ $desktop-body: 22px;
 
 body {
   * {
-    font-family: $sans;
+    font-family: $sans !important;
   }
 }
 .sans {

@@ -437,13 +437,6 @@ hgroup,
 section {
   display: block; }
 
-body,
-button,
-input,
-select,
-textarea {
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
-
 code,
 pre {
   -moz-osx-font-smoothing: auto;
@@ -6182,6 +6175,7 @@ label.panel-block:hover {
   color: white;
   bottom: 0;
   width: 100%;
+  padding: 1em 0;
   z-index: 100; }
   .mobile-nav .columns {
     width: 100%; }
@@ -6191,10 +6185,10 @@ label.panel-block:hover {
       color: white; }
 
 body * {
-  font-family: "Trebuchet MS"; }
+  font-family: "Trebuchet MS", "Verdana", "Lucida Grande", sans !important; }
 
 .sans {
-  font-family: "Trebuchet MS"; }
+  font-family: "Trebuchet MS", "Verdana", "Lucida Grande", sans; }
 
 .serif {
   font-family: Georgia, "Times New Roman", Times, serif; }

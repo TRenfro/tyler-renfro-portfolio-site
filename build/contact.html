@@ -12,39 +12,26 @@
 </head>
 
 <body class="contact">
-    <div class="mobile-nav show-xs-only">
-        <div class="columns is-mobile no-margin">
-            <div class="column is-4-mobile">
-                <p class="text-center type-sm caps">
-                    <a href="./index.html">About</a>
-                </p>
-            </div>
-            <div class="column is-4-mobile">
-                <p class="text-center type-sm caps">
-                    <a href="./experience.html">Experience</a>
-                </p>
-            </div>
-            <div class="column is-4-mobile">
-                <p class="text-center type-sm caps">
-                    <a href="./contact.html">Contact</a>
-                </p>
-            </div>
-        </div>
-    </div>
     <section class="hero is-fullheight">
+        <!-- Hero header: will stick at the top -->
         <div class="hero-head">
             <header class="nav">
                 <div class="container">
                     <div class="nav-left">
-                        <a class="nav-item" href="./index.html">
-                            <img class="my-headshot hide-xs" src="/images/my-headshot.jpg" alt="Logo"><p class="mg-left-xs"><strong>Tyler Renfro</strong>—<em>Freelance Designer</em></p>
+                        <a class="nav-item">
+                            <img class="my-headshot" src="/images/my-headshot.jpg" alt="Logo"><p class="mg-left-xs"><strong>Tyler Renfro</strong>—<em>Freelance Designer</em></p>
                         </a>
                     </div>
+                    <span id="nav-toggle" class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    </span>
                     <div id="nav-menu" class="nav-right nav-menu">
-                        <a href="./index.html" class="nav-item is-active">About</a>
+                        <a href="./index.html" class="nav-item">About</a>
                         <a href="./experience.html" class="nav-item">Experience</a>
-                        <span class="nav-item">
-                            <a href="./contact.html" class="button is-outlined"><span>Contact</span></a>
+                        <span class="nav-item is-active">
+                            <a href="./contact.html" class="button is-primary is-outlined"><span>Contact</span></a>
                         </span>
                     </div>
                 </div>
@@ -56,8 +43,8 @@
             <div class="container">
                 <div class="columns is-mobile">
                     <div class="column is-12-mobile is-8-tablet is-8-desktop is-offset-2-tablet is-offset-2-desktop">
-                        <h1 data-aos="fade-up" data-aos-once="true" class="main-heading no-bottom type-xxl type-xl-mobile line-height-130 text-left"><strong>Let's Talk</strong></h1>
-                        <p data-aos="fade-up" data-aos-once="true" data-aos-delay="100" class="type-sm type-sm-mobile text-left mg-top-bottom-md line-height-140">I enjoy both working remotely as well as onsite. If you want to get in contact — don’t hesitate to
+                        <h1 data-aos="fade-up" data-aos-once="true" class="main-heading no-bottom type-xxl type-lg-mobile line-height-130 text-left"><strong>Let's Talk</strong></h1>
+                        <p data-aos="fade-up" data-aos-once="true" data-aos-delay="100" class="type-sm type-xs-mobile text-left mg-top-bottom-md line-height-140">I enjoy both working onsite as well as remotely. If you want to get in contact — don’t hesitate to
                             send an email to the address below.</p>
                     </div>
                 </div>
@@ -65,7 +52,7 @@
                     <div data-aos="fade-up" data-aos-once="true" class="column is-12-mobile is-5-tablet is-3-desktop is-offset-2-tablet is-offset-2-desktop">
                         <div class="field has-addons">
                             <p class="control full-width">
-                                <input class="input" id="foo" value="tyler.v.renfro@gmail.com" disabled>
+                                <input class="input" id="foo" value="tyler.v.renfro@gmail.com">
                             </p>
                             <p class="control">
                                 <button class="btn button is-gradient" data-clipboard-target="#foo">
