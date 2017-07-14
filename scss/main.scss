@@ -4,12 +4,13 @@
 @import 'vendor/utilities';
 // @import 'vendor/components';
 @import 'vendor/bulma';
+@import 'vendor/typography';
+@import 'vendor/font-awesome';
 @import 'vendor/responsive';
 @import 'vendor/nav';
 
 //project
-@import 'vendor/typography';
-@import 'vendor/font-awesome';
+@import 'vendor/contact';
 
 html {
     background-color: #E9EBEE;

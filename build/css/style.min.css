@@ -6127,65 +6127,8 @@ label.panel-block:hover {
   padding: 3rem 1.5rem 3rem; }
 
 /*# sourceMappingURL=bulma.css.map */
-@media (max-width: 768px) {
-  /*Mobile typeface sizes*/
-  .container {
-    width: 85vw; }
-  .hide-xs {
-    display: none; }
-  body {
-    margin-top: 5px; }
-  section {
-    margin-left: 5px;
-    margin-right: 5px; } }
-
-@media (min-width: 769px) {
-  /*Tablet typeface sizes*/
-  .container {
-    width: 80vw; }
-  body {
-    border: solid 15px #E9EBEE; }
-  .show-xs-only {
-    display: none; } }
-
-@media (min-width: 992px) {
-  /*Desktop typeface sizes*/
-  .container {
-    width: 70vw; }
-  body {
-    border: solid 25px #E9EBEE; } }
-
-@media (min-width: 1200px) {
-  /*Large Desktop typeface sizes*/
-  .container {
-    width: 55vw; } }
-
-.hero .nav {
-  background: white; }
-
-.nav-left em {
-  color: #7a7a7a; }
-  .nav-left em:hover {
-    color: #7a7a7a; }
-
-.mobile-nav {
-  overflow: hidden;
-  background: linear-gradient(-20deg, rgba(57, 0, 84, 0.95) 0%, rgba(1, 66, 81, 0.95) 100%);
-  position: fixed;
-  color: white;
-  bottom: 0;
-  width: 100%;
-  padding: 1em 0;
-  z-index: 100; }
-  .mobile-nav .columns {
-    width: 100%; }
-  .mobile-nav a {
-    color: white; }
-    .mobile-nav a:focus, .mobile-nav a:visited, .mobile-nav a:active, .mobile-nav a:hover {
-      color: white; }
-
 body * {
-  font-family: "Trebuchet MS", "Verdana", "Lucida Grande", sans !important; }
+  font-family: "Trebuchet MS", "Verdana", "Lucida Grande", sans; }
 
 .sans {
   font-family: "Trebuchet MS", "Verdana", "Lucida Grande", sans; }
@@ -8513,6 +8456,117 @@ em {
   margin: 0;
   overflow: visible;
   clip: auto; }
+
+@media (max-width: 768px) {
+  /*Mobile typeface sizes*/
+  .container {
+    width: 85vw; }
+  .hide-xs {
+    display: none; }
+  body {
+    margin-top: 5px; }
+  section {
+    margin-left: 5px;
+    margin-right: 5px; }
+  footer.footer {
+    position: relative;
+    bottom: 20px;
+    padding: 1rem 1.5rem 3rem; } }
+
+@media (min-width: 769px) {
+  /*Tablet typeface sizes*/
+  .container {
+    width: 80vw; }
+  body {
+    border: solid 15px #E9EBEE; }
+  .show-xs-only {
+    display: none; } }
+
+@media (min-width: 992px) {
+  /*Desktop typeface sizes*/
+  .container {
+    width: 70vw; }
+  body {
+    border: solid 25px #E9EBEE; } }
+
+@media (min-width: 1200px) {
+  /*Large Desktop typeface sizes*/
+  .container {
+    width: 55vw; } }
+
+.hero .nav {
+  background: white; }
+
+.nav-left em {
+  color: #7a7a7a; }
+  .nav-left em:hover {
+    color: #7a7a7a; }
+
+.mobile-nav {
+  overflow: hidden;
+  background: linear-gradient(-20deg, rgba(57, 0, 84, 0.95) 0%, rgba(1, 66, 81, 0.95) 100%);
+  position: fixed;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  padding: 1em 0;
+  z-index: 100; }
+  .mobile-nav .columns {
+    width: 100%; }
+  .mobile-nav a {
+    color: white; }
+    .mobile-nav a:focus, .mobile-nav a:visited, .mobile-nav a:active, .mobile-nav a:hover {
+      color: white; }
+
+#snackbar {
+  visibility: hidden;
+  /* Hidden by default. Visible on click */
+  color: #fff;
+  /* White text color */
+  z-index: 1;
+  /* Add a z-index if needed */ }
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible;
+  /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s; }
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+
+@keyframes fadein {
+  from {
+    bottom: 0;
+    opacity: 0; }
+  to {
+    bottom: 30px;
+    opacity: 1; } }
+
+@-webkit-keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1; }
+  to {
+    bottom: 0;
+    opacity: 0; } }
+
+@keyframes fadeout {
+  from {
+    bottom: 30px;
+    opacity: 1; }
+  to {
+    bottom: 0;
+    opacity: 0; } }
 
 html {
   background-color: #E9EBEE; }
